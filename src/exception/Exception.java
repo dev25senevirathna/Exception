@@ -13,7 +13,7 @@ public class Exception {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int x=1;
+        int x=2;
         do{
             try{
             Scanner in= new Scanner(System.in);
@@ -30,11 +30,14 @@ public class Exception {
             System.out.println("Enter fourth number");
             int num4 = in.nextInt();    
                 
-            int total= (num1+num2+num3)/num4;
+            System.out.println("Enter Fifth number"); 
+            int num5 = in.nextInt();    
+                
+            int value= (num1*num2+num3)/(num4+num5);
             
-            System.out.println("Answer ="+total);
+            System.out.println("Answer is ="+value);
              
-            x=3;
+            x=1;
             
         }  catch(Exception e){
                 
