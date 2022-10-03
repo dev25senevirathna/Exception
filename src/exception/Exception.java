@@ -31,11 +31,14 @@ public class Exception {
             int num4 = in.nextInt();    
                 
             System.out.println("Enter Fifth number"); 
-            int num5 = in.nextInt();    
+            int num5 = in.nextInt();
                 
-            int value= (num1*num2+num3)/(num4+num5);
+            System.out.println("Enter sixth number");
+            int num6 = in.nextInt();
+                
+            int answer= (num1+num2+num3)/(num4+num5-num6);
             
-            System.out.println("Answer is ="+value);
+            System.out.println("Answer is ="+answer);
              
             x=1;
             
